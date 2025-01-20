@@ -71,7 +71,7 @@ font-weight: 500;
 .nav-link {
   text-decoration: none;
 }
-.navbar, .banner {
+.navbar, .banner {     /* max-width: tui amare koto jalaili!!! */
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -110,17 +110,36 @@ font-weight: 400;
 #quick-list {
   font-weight: 500;
 }
+/* some facts related styles */
+.fact-card {
+  border: 1px solid #FF900E;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.fact-description {
+  max-width: 540px;
+}
 
-/* responsive media for midium device */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
-   flex-direction: column;
-  } 
-  .our-features{
-   margin: 50px auto;
-  }
- }
-/* responsive media quary */
+/* responsive media quary for small device */
 @media screen and (max-width: 576px) {
   .navbar,   
   .teams{
@@ -133,5 +152,15 @@ font-weight: 400;
     margin-left: 20px;
   }
 }
+
+/* responsive media for midium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+   flex-direction: column;
+  } 
+  .our-features{
+   margin: 50px auto;
+  }
+ }
 
 
